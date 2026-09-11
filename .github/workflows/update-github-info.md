@@ -14,6 +14,7 @@ network:
     - defaults
     - github.blog
     - github.com
+    - awesome-copilot.github.com
 safe-outputs:
   create-pull-request:
     title-prefix: "[update-github-info] "
@@ -30,7 +31,8 @@ Keep `site/content/github-info.md` current with the latest GitHub news for Mona'
 1. Read `notes/mona-notes.md` for tone, style, and editorial guidance.
 2. Fetch `https://github.blog/latest/` for recent GitHub Blog posts.
 3. Fetch `https://github.blog/changelog/` for recent GitHub Changelog entries.
-4. Update `site/content/github-info.md` with concise, practical summaries of notable new items, following the guidance in `notes/mona-notes.md`. Mention whether each update came from the GitHub Blog or the GitHub Changelog.
-5. Open a pull request proposing the changes so Mona can review before anything goes live.
+4. Fetch `https://awesome-copilot.github.com/workflows/` for notable Awesome Copilot workflows.
+5. Update `site/content/github-info.md` with concise, practical summaries of notable new items, following the guidance in `notes/mona-notes.md`. Mention whether each update came from the GitHub Blog, the GitHub Changelog, or Awesome Copilot workflows.
+6. Open a pull request proposing the changes so Mona can review before anything goes live.
 
 If there is nothing new to report since the last update, call `noop` with a short reason instead of opening a pull request.
